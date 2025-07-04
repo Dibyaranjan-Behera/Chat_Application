@@ -1,29 +1,27 @@
-# 💬 WhatsApp-Style Real-Time Chat UI
 
-A modern and responsive real-time chat UI inspired by WhatsApp Web, built using **HTML, CSS, Bootstrap 5**, and **JavaScript**. This UI connects to a Spring Boot backend via **WebSockets (STOMP + SockJS)** to send and receive messages in real-time.
+## 📸 UI Demo (Key Elements)
 
-## 🖼️ UI Overview
+- **Chat Header** with status: ✓ Online / ✗ Offline  
+- **Chat Window** with auto-scroll, styled message bubbles  
+- **Typing Indicator** below messages  
+- **Input Area**:
+  - Your name (sender input)
+  - Message input (Enter to send or click button)
 
-![Chat UI Screenshot](screenshot.png) <!-- Replace with an actual image if available -->
+## 🧪 To Test the UI
 
-### Features
+1. Start the Spring Boot application.
+2. Open `http://localhost:8080/chat` in multiple browser tabs.
+3. Type messages and see real-time updates.
+4. Watch typing notifications in real-time as others type.
 
-- 📱 **WhatsApp-inspired Layout**  
-  Chat bubbles, typing indicator, sender names, and timestamps styled to mimic WhatsApp.
+## 🛠️ Technologies Used
 
-- 🚀 **Real-time Messaging**  
-  Messages appear instantly via optimistic UI and sync across users using STOMP over WebSocket.
+- **Frontend**: HTML, CSS, Bootstrap 5, JavaScript  
+- **WebSocket Client**: STOMP.js, SockJS  
+- **Backend (Spring Boot)**: WebSocket, STOMP, REST
 
-- ✍️ **Typing Indicator**  
-  Shows when another user is typing via dynamic updates from `/topic/typing`.
+---
 
-- 🌐 **Responsive Design**  
-  Layout adapts across devices using Bootstrap 5.
-
-- 🎨 **Custom Styling**  
-  - Background with WhatsApp-like tile image  
-  - Sent (green) and received (white) chat bubbles  
-  - User-specific styling for names and timestamps
-
-## 📂 File Structure
+Feel free to contribute or fork the project!
 
